@@ -5,7 +5,6 @@ class Application
    resp = Rack::Response.new
 
    time = Time.new
-   binding.pry
    if time.hour.between?(1,12)
      resp.write "Good Morning!"
    else
